@@ -1,3 +1,3 @@
 # Rock_Paper_Cissor
-Mini Game
-![]("1.gif")
+
+![](1.gif)
