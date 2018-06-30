@@ -34,6 +34,8 @@ class MyGame extends JFrame{
 	private static final int IDX_SCISSORS = 1;
 	private static final int IDX_PAPER = 2;
 	
+	private final static String DIR = "img\\";
+	
 
 	private int winNum;
 	private int loseNum;
@@ -79,16 +81,16 @@ class MyGame extends JFrame{
 		Image img;
 		
 		for(int i=0; i<3 ; i++){
-			img = kit.getImage("MJB"+i+".jpg");
+			img = kit.getImage(DIR + "MJB"+i+".jpg");
 			imgMJB[i] = new ImageIcon(img);
 			
-			img = kit.getImage("yMJB"+i+".jpg");
+			img = kit.getImage(DIR + "yMJB"+i+".jpg");
 			imgYellowMJB[i] = new ImageIcon(img);
 			
-			img = kit.getImage("MJB" + i + ".gif");
+			img = kit.getImage(DIR + "MJB" + i + ".gif");
 			imgGifMJB[i] = new ImageIcon(img);
 		}
-		img = kit.getImage("rMJB.gif");
+		img = kit.getImage(DIR + "rMJB.gif");
 		imgRMJB = new ImageIcon(img);
 		
 		
